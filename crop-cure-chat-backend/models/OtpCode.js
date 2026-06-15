@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const otpCodeSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
@@ -19,8 +20,7 @@ const otpCodeSchema = new mongoose.Schema({
   },
   expiresAt: {
     type: Date,
-    required: true,
-    index: true
+    required: true
   },
   used: {
     type: Boolean,
